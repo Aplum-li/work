@@ -1,0 +1,531 @@
+@charset "utf-8";
+/**
+ * 初始化样式
+ */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a img{
+	border: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+body{
+	font-size: 12px;
+	width: 100%;
+	max-width: 1904px;
+	margin: auto;
+	font-family: "宋体";
+	background: #7a0000 url(../images/bodybg.jpg) no-repeat center top;
+}
+.top{
+	width: 922px;
+	margin: auto;
+	height: 116px;
+	overflow: hidden;
+	margin-top: 194px;
+}
+
+
+.banner{
+	width: 920px;
+	margin: auto;
+	height: 339px;
+	background: url(../images/bannerbg.png) no-repeat;
+	padding-top: 10px;
+}
+.nav{
+	width: 872px;
+	margin: auto;
+	height: 40px;
+	overflow: hidden;
+	padding-left: 28px;
+	background: url(../images/navbg.jpg) no-repeat;
+}
+.navList li{
+	float: left;
+	width: 94px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: url(../images/navabg.jpg) no-repeat right center;
+}
+.navList li a{
+	color: #fccc00;
+}
+
+.slideBox {
+	width: 900px;
+	height: 289px;
+	overflow: hidden;
+	position: relative;
+	margin-left: 10px;
+}
+
+.slideBox .hd {
+	height: 15px;
+	overflow: hidden;
+	position: absolute;
+	right: 40px;
+	bottom: 8px;
+	z-index: 1;
+}
+
+.slideBox .hd ul {
+	overflow: hidden;
+	zoom: 1;
+	float: left;
+}
+
+.slideBox .hd ul li {
+	float: left;
+	margin-right: 2px;
+	width: 15px;
+	height: 15px;
+	line-height: 14px;
+	text-align: center;
+	background: url(../images/wbg.png) no-repeat;
+	cursor: pointer;
+}
+
+.slideBox .hd ul li.on {
+	background: url(../images/ybg.png) no-repeat;
+}
+
+.slideBox .bd {
+	position: relative;
+	height: 100%;
+	z-index: 0;
+}
+
+.slideBox .bd li {
+	zoom: 1;
+	vertical-align: middle;
+}
+
+.slideBox .bd img {
+	width: 900px;
+	height: 289px;
+	display: block;
+}
+
+.main{
+	width: 920px;
+	overflow: hidden;
+	margin: auto;
+}
+.mainLeft{
+	width: 220px;
+	float: left;
+	background: url(../images/catedivbg.jpg) repeat-y;
+}
+.leftTitle{
+	position: relative;
+	width: 220px;
+	height: 31px;
+	line-height: 38px;
+	text-align: center;
+	color: #fef29d;
+	overflow: hidden;
+	background: url(../images/title.gif) no-repeat;
+}
+.leftTitle a{
+	position: absolute;
+  right: 5px;
+  bottom: 2px;
+  color: #fef29d;
+  line-height: 14px;
+  height: 14px;
+}
+.video{
+	width: 220px;
+	height: 151px;
+	overflow: hidden;
+}
+/* 本例子css */
+.sideMenu {
+	width: 100%;
+}
+
+.sideMenu div {
+	width: 168px;
+	margin: auto;
+	text-indent: 35px;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #b37a0d;
+	cursor: pointer;
+	color: #603100;
+	background: url(../images/catebg.jpg) no-repeat 8px center;
+}
+
+.sideMenu div em {
+	float: right;
+	display: block;
+	width: 40px;
+	height: 32px;
+	cursor: pointer;
+}
+
+.sideMenu div.on em {
+	background-position: 16px -57px;
+}
+
+.sideMenu ul {
+	width: 133px;
+	padding-left: 35px;
+	margin: auto;
+	display: none;
+ /* 默认都隐藏 */
+}
+.sideMenu ul li{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 15px;
+	overflow: hidden;
+	background: url(../images/cate2bg.jpg) no-repeat left center;
+}
+.sideMenu ul li a{
+	color: #603100;
+}
+.indexContact{
+	padding: 20px 30px;
+	line-height: 23px;
+	color: #603100;
+	background: url(../images/catedivbg.jpg) repeat-y;
+}
+
+
+
+.mainRight{
+	width: 650px;
+	padding: 35px 25px;
+	float: left;
+	min-height: 624px;
+	background: #edd897;
+}
+.imgs{
+	width: 100%;
+	position: relative;
+}
+.imgs .more{
+  right: 15px;
+  bottom: 1px;
+  position: absolute;
+  width: 46px;
+  height: 25px;
+}
+.indexPorList{
+	padding: 20px 0 0 0;
+	overflow: hidden;
+}
+.indexPorList li{
+	float: left;
+	width: 125px;
+	margin-right: 6px;
+	height: 160px;
+	overflow: hidden;
+	text-align: center;
+	background: url(../images/pbg.jpg) no-repeat;
+}
+.indexPorList li img{
+	display: block;
+	width: 115px;
+	height: 118px;
+	margin: auto;
+	margin-top: 5px;
+}
+.indexPorList li .pTitle{
+	height: 33px;
+	line-height: 33px;
+	display: block;
+	color: #fff;
+	margin-top: 4px;
+}
+.aboutNews{
+	padding: 26px 0 0 0;
+	overflow: hidden;
+}
+.indexAbout{
+	width: 319px;
+	float: left;
+}
+.aboutP{
+	padding: 15px 0;
+	height: 120px;
+	color: #a86d23;
+	overflow: hidden;
+	line-height: 20px;
+	text-indent: 2em;
+}
+.aboutP a{
+	color: #a86d23;
+}
+.indexNews{
+	float: left;
+	margin-left: 32px;
+}
+.indexNewsList{
+	overflow: hidden;
+	padding: 10px 0;
+}
+.indexNewsList li{
+	height: 27px;
+	text-indent: 14px;
+	overflow: hidden;
+	line-height: 27px;
+	color: #a86d23;
+	background: url(../images/libg.jpg) no-repeat left center;
+	border-bottom: 1px dotted #a86d23;
+}
+.indexNewsList li a{
+	color: #a86d23;
+	width: 225px;
+	float: left;
+	overflow: hidden;
+}
+.indexNewsList li span{
+	float: left;
+	width: 74px;
+}
+.variety{
+	padding: 23px 0 0 0;
+}
+.varietyList{
+	overflow: hidden;
+	padding: 20px 0 0 0;
+}
+.varietyList li{
+	float: left;
+	width: 200px;
+	margin-right: 20px;
+}
+.varImg{
+	width: 96px;
+	height: 115px;
+	float: left;
+	background: url(../images/bai.jpg) no-repeat;
+}
+.varImg img{
+	width: 89px;
+	height: 80px;
+	overflow: hidden;
+	margin: 6px 3px;
+}
+.varInfo{
+	margin: 0 0 0 5px;
+	float: left;
+	width: 96px;
+}
+.varInfo a{
+	display: block;
+	height: 25px;
+	overflow: hidden;
+	color: #890000;
+}
+.varInfo .varP{
+	color: #9c701e;
+	line-height: 20px;
+}
+
+.footer{
+	width: 920px;
+	margin: auto;
+	padding: 20px 0 0 0;
+	line-height: 25px;
+	background: url(../images/footbg.jpg) repeat-y;
+	min-height: 60px;
+	text-align: center;
+	color: #fef29d;
+}
+
+.leftWeichat{
+	height: 209px;
+	position: fixed;
+	top: 234px;
+	background: #440001;
+	overflow: hidden;
+}
+.weichatImg{
+	float: left;
+	display: none;
+	padding: 3px 0 0px 3px;
+}
+.leftWeichat .wbg{
+	float: left;
+	width: 35px;
+	cursor: pointer;
+	height: 210px;
+	background: url(../images/weichatbg.jpg) no-repeat;
+}
+.leftWeichat .wbg img{
+	margin: 185px 0 0 12px;
+}
+
+.online{
+	height: 209px;
+	position: fixed;
+	top: 234px;
+	right: 0;
+	background: #440001;
+	overflow: hidden;
+}
+.weichatImg{
+	float: left;
+	display: none;
+	padding: 3px 0 0px 3px;
+}
+.online .wbg{
+	float: left;
+	width: 35px;
+	cursor: pointer;
+	height: 210px;
+	background: url(../images/onlinebg.jpg) no-repeat left top;
+}
+.online .wbg img{
+	margin: 185px 0 0 12px;
+}
+.wTitle{
+	display: block;
+	height: 25px;
+	width: 102px;
+	margin: auto;
+	text-align:  center;
+	color: #a30104;
+	border-bottom: 1px solid #ace5f9;
+}
+.wei{
+	display: block;
+	height: 36px;
+	width: 102px;
+	line-height: 36px;
+	margin: auto;
+	border-bottom: 1px solid #e6e5e4;
+	background: url(../images/weichatico.jpg) no-repeat 3px center;
+	text-indent: 30px;
+}
+a.zixun{
+	color: #00a0e9;
+	display: block;
+	text-align: center;
+	margin-top: 3px;
+}
+a.first{
+	margin-top: 5px;
+}
+.online2{
+	width: 200px;
+	height: 200px;
+	margin: 3px 0 0 0;
+	background: url(../images/yjbg.png) no-repeat left center;
+}
+
+.mainRight2{
+	padding-bottom: 0;
+	min-height: 633px;
+}
+.searchPro{
+	min-height: 135px;
+	padding: 20px 30px;
+}
+.searchPro select{
+	width: 142px;
+	height: 20px;
+	border: 1px solid #7c5510;
+}
+.prokey{
+	width: 140px;
+	height: 18px;
+	border: 1px solid #7c5510;
+	margin: 4px 0 6px 0;
+}
+.searchPro .sub{
+	background: #72150b;
+	border: none;
+	color: #fff;
+	width: 46px;
+	height: 19px;
+}
+
+.pos{
+	display: block;
+	height: 28px;
+	line-height: 28px;
+	color: #a86d23;
+	text-align: right;
+	padding-right: 10px;
+}
+.pos a{
+	color: #a86d23;
+}
+.porList{
+	overflow: hidden;
+	padding: 0 0 0 10px;
+}
+.porList li{
+	width: 200px;
+	float: left;
+	margin-right: 10px;
+}
+.porList li .pTitle{
+	display: block;
+	color: #a86d23;
+	text-align: center;
+	height: 29px;
+	line-height: 29px;
+}
+
+.detailPList{
+	overflow: hidden;
+	padding: 30px 0 0 25px;
+}
+.detailPList li{
+	width: 166px;
+	height: 110px;
+	float: left;
+	margin-right: 40px;
+	overflow: hidden;
+}
+.detailPList li img{
+	width: 166px;
+	height: 110px;
+}
+.detailSee{
+	display: block;
+	height: 20px;
+	padding: 3px 0 0 0;
+	text-align: center;
+}
+.detailSee a{
+	color: #a86d23;
+}
+.detailTitle{
+	color: #a86d23;
+}
+.proContent{
+	color: #a86d23;
+	width: 615px;
+	overflow: hidden;
+	margin-left: 25px;
+	padding: 10px 0 20px 0;
+	line-height: 40px;
+}
+.detailt{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px solid #ba8a42;
+	margin-bottom: 10px;
+}
+.proContent img{
+	max-width: 615px;
+}

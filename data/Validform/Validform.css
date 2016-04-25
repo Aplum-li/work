@@ -1,0 +1,140 @@
+.registerform .need{
+	width:10px;
+	color:#b20202;
+}
+.registerform td{
+	padding:5px 8px;
+	vertical-align:top;
+	text-align:left;
+}
+.registerform .inputxt,.registerform textarea{
+	border:1px solid #dddddd;
+	width:196px;
+	padding:4px 2px;
+	margin: 0 10px;
+}
+.registerform textarea{
+	height:75px;
+}
+.registerform label{
+	margin:0 15px 0 4px;
+}
+.registerform .tip{
+	line-height:20px;
+	color:#5f6a72;
+}
+.registerform select{
+	margin-left: 10px;
+	border: 1px solid #dddddd;
+	padding: 5px 0;
+}
+.registerformalter select{
+	width:124px;
+}
+.swfupload{
+	vertical-align:top;
+}
+.passwordStrength{
+
+}
+.passwordStrength b{
+	font-weight:normal;
+}
+.passwordStrength b,.passwordStrength span{
+	display:inline-block; 
+	vertical-align:middle;
+	line-height:16px;
+	line-height:18px\9;
+	height:16px;
+}
+.passwordStrength span{
+	width:45px; 
+	text-align:center; 
+	background-color:#d0d0d0; 
+	border-right:1px solid #fff;
+}
+.passwordStrength .last{
+	border-right:none;
+}
+.passwordStrength .bgStrength{
+	color:#fff;
+	background-color:#71b83d;
+}
+#demo1 .passwordStrength{
+	margin-left:8px;
+}
+.tipmsg{
+	padding:0 10px;
+}
+textarea{
+	overflow:auto;
+	resize:none;
+}
+.registerform .inputxt,
+.registerform textarea{
+  padding:10px;
+  width:245px;
+}
+.Validform_checktip{display:none; line-height:38px; height:38px;}
+.Validform_wrong,
+.Validform_right,
+.Validform_loading{display:block;}
+.info{
+  margin-left:8px; 
+  border:1px solid #ccc; 
+  padding:8px 20px 8px 10px; 
+  color:#666; 
+  float:left;
+  position:relative;
+  display:none;
+  line-height:20px;
+}
+.dec {
+    top: 9px;
+    display: block;
+    height: 17px;
+    overflow: hidden;
+    position: absolute;
+    left: -8px;
+    width: 8px;
+}
+.dec s {
+    font-family: simsun;
+    font-size: 16px;
+    height: 19px;
+    left: 0;
+    line-height: 21px;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 17px;
+}
+.dec .dec1 {
+    color: #ccc;
+}
+.dec .dec2 {
+    color: #fff;
+    left: 1px;
+}
+.registerform td.r{
+	text-align: right;
+}
+input[type="submit"],input[type="button"],button,textarea,input[type="reset"]{
+	padding: 5px 10px;
+	margin-left: 18px;
+}
+span.blue{
+	color: #2a6496;
+	font-weight: bold;
+}
+
+input.input30{
+	width: 30px;
+	text-align: center;
+}
+a.b{
+	font-weight: bold;
+}
+.registerform .input400{
+	width: 400px;
+}

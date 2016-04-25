@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>列表页</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.source.js"></script>
+	<SCRIPT src="shop/js/base.js" type=text/javascript></SCRIPT>
+<link href="shop/css/css.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="top">
+		<img src="images/logo.png">
+	</div>
+	<div class="banner">
+		<div class="nav">
+			<ul class="navList">
+				<li><a href="">公司首页</a></li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">产品展示</a></li>
+				<li><a href="">馅料品种</a></li>
+				<li><a href="">人才招聘</a></li>
+				<li><a href="">企业形象</a></li>
+				<li><a href="">公司资讯</a></li>
+				<li><a href="">客户留言</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+		</div>
+		<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul><li></li><li></li><li></li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="" target="_blank">
+							<img src="images/banner.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<img src="images/pic2.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<img src="images/pic3.jpg" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:1000});
+		</script>
+	</div>
+	<div class="main">
+		<div class="mainLeft">
+			<div class="leftTitle">视频专区<a href="">more</a></div>
+			<div class="video">
+				<img src="images/video.jpg">
+			</div>
+			<div class="leftTitle">商品目录</div>
+			<div class="sideMenu">
+				<div class="on"><em></em>月饼系列</div>
+				<ul>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+				</ul>
+				<div><em></em>月饼系列</div>
+				<ul>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+				</ul>
+				<div><em></em>月饼系列</div>
+				<ul>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+				</ul>
+			</div><!-- sideMenu End -->
+
+			<script type="text/javascript">
+				jQuery(".sideMenu").slide({
+					titCell:"div", //鼠标触发对象
+					targetCell:"ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+					effect:"slideDown", //targetCell下拉效果
+					delayTime:300 , //效果时间
+					triggerTime:150, //鼠标延迟触发时间（默认150）
+					defaultPlay:true,//默认是否执行效果（默认true）
+					trigger:"click",
+					returnDefault:false //鼠标从.sideMen移走后返回默认状态（默认false）
+					});
+			</script>
+			<div class="leftTitle">商品搜索</div>
+			<div class="searchPro">
+				<form>
+					<select name="typeid">
+						<option value="">请选择分类</option>
+					</select>
+					<input type="text" class="prokey" name="prokey" value="">
+					<input type="submit" value="搜索" class="sub">
+				</form>
+			</div>
+		</div>
+		<div class="mainRight mainRight2">
+			<div class="imgs">
+				<img src="images/listprobg.jpg">
+			</div>
+			<div class="pos">
+				您的位置：<a href="">首页</a> -> 产品展示
+			</div>
+			<div id="preview">
+				<div class="jqzoom" id="spec-n1" onClick="window.open('images/yyzg.jpg')">
+					<img height="445" src="images/yyzg.jpg" jqimg="images/yyzg.jpg" width="630">
+				</div>
+  		</div>
+  		<div id="spec-n5">
+				<div id="spec-list">
+					<ul class="list-h">
+						<li><img src="images/pl1.png"> </li>
+						<li><img src="images/pl2.jpg"> </li>
+						<li><img src="images/pl3.jpg"> </li>
+					</ul>
+				</div>
+		  </div>
+  		<div class="detailSee"><a href="">[查看原图]</a>&nbsp;&nbsp;<a href="javascript:history.go(-1)">[返回]</a></div>
+  		<div class="detailSee"><a href="">[上一个：鼎盛中华]</a>&nbsp;&nbsp;<a href="javascript:history.go(-1)">[下一个：至尊鲍鱼]</a></div>
+  		<div class="detailTitle">
+  			<b>尊贵御月</b>
+  		</div>
+  		<div class="proContent">
+  			<span class="detailt"><b>详细说明</b></span>
+  			【产品编号】穗龙 SL-02<br>
+				【产品名称】穗龙 尊贵御月<br>
+				【产品条码】6938605288698<br>
+				【内    配】蛋黄白莲蓉月饼102gX2个  白莲蓉月饼102gX2个  ……………………<br>
+				【配 料 表】白莲蓉馅料 白砂糖 白芸豆....<br>
+				【食品添加剂】脱氢乙酸钠 山梨酸钾....<br>
+				【月饼种类】广式月饼<br>
+				【净 含 量】1.28kg <br>
+				【保 质 期】60天<br>
+				【生产许可证编号】440124010112<br>
+				【礼盒尺寸】长535mm  宽397mm 高80mm<br>
+  		</div>
+		</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>广州市穗龙食品有限公司 版权所有@Copyright </p>
+		<p>顾客服务中心：020-88888888/66666666 传真：020-88888888 联系人：XXX</p>
+	</div>
+	<div class="leftWeichat">
+		<div class="weichatImg"><img src="images/weichat.jpg"></div>
+		<div class="wbg" onclick="suspension(this)" name='1'><img src="images/ll.png"></div>
+	</div>
+	<div class="online">
+		<div class="wbg" onclick="suspension(this)" name='1'><img src="images/lr.png"></div>
+		<div class="weichatImg online2">
+			<span class="wTitle">在线咨询</span>
+			<span class="wei">在线咨询</span>
+			<a href="" class="zixun first"><img src="images/qq.png">在线咨询1</a>
+			<a href="" class="zixun"><img src="images/qq.png">在线咨询1</a>
+			<a href="" class="zixun"><img src="images/qq.png">在线咨询1</a>
+			<a href="" class="zixun"><img src="images/qq.png">在线咨询1</a>
+			<a href="" class="zixun"><img src="images/qq.png">在线咨询1</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+<SCRIPT type=text/javascript>
+	$(function(){			
+	   $(".jqzoom").jqueryzoom({
+			xzoom:300,
+			yzoom:300,
+			offset:10,
+			position:"right",
+			preload:1,
+			lens:1
+		});
+		$("#spec-list").jdMarquee({
+			deriction:"left",
+			width:630,
+			height:110,
+			step:3,
+			speed:4,
+			delay:10,
+			control:true,
+			_front:"#spec-right",
+			_back:"#spec-left"
+		});
+		$("#spec-list img").bind("mouseover",function(){
+			var src=$(this).attr("src");
+			$("#spec-n1 img").eq(0).attr({
+				src:src.replace("\/n5\/","\/n1\/"),
+				jqimg:src.replace("\/n5\/","\/n0\/")
+			});
+			$(this).css({
+			});
+		}).bind("mouseout",function(){
+			$(this).css({
+			});
+		});				
+	})
+	</SCRIPT>
+
+<SCRIPT src="shop/js/lib.js" type=text/javascript></SCRIPT>
+<SCRIPT src="shop/js/97zzw.js" type=text/javascript></SCRIPT>
+</html>

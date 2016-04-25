@@ -1,0 +1,4 @@
+[07-Jan-2016 01:44:18 UTC] PHP Notice:  Undefined variable: a in F:\wamp\www\thcms\include\common.inc.php on line 24
+[07-Jan-2016 01:44:18 UTC] PHP Stack trace:
+[07-Jan-2016 01:44:18 UTC] PHP   1. {main}() F:\wamp\www\thcms\index.php:0
+[07-Jan-2016 01:44:18 UTC] PHP   2. require_once() F:\wamp\www\thcms\index.php:9

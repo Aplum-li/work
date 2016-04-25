@@ -1,0 +1,8 @@
+#RewriteEngine on
+#RewriteBase /
+#RewriteRule ^test/$ /test [R]
+#RewriteRule ^m/([a-zA-Z\d]+)/c/([a-zA-Z\d]+)$ /index.php?m=$1&c=$2
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www.thcms.com$ [NC]
+RewriteRule ^(.*)$ http://www.thcms.com/$1 [R=301,L]
