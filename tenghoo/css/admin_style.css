@@ -1,0 +1,115 @@
+@charset "utf-8";
+html,BODY
+{
+	FONT-FAMILY:Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	text-decoration: none;
+	background:#ffffff;
+	SCROLLBAR-FACE-COLOR: #65A8E5; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #65A8E5; 
+	SCROLLBAR-SHADOW-COLOR: #BDD6EE;
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-ARROW-COLOR: #ffffff; 
+	SCROLLBAR-TRACK-COLOR:#BDD6EE; 
+	SCROLLBAR-DARKSHADOW-COLOR: #65A8E5;
+	margin:1px 1px 0px 1px;
+}
+
+TD
+{
+	FONT-SIZE: 12px;
+}
+form{ margin:0px; padding:0px;}
+
+textarea
+{ 	font-size:12px;}
+
+Input
+{
+	font-size:12px;
+	BORDER: #aacbe1 1px solid;
+	padding:0 0 0 2px;
+	margin:0px; 
+	height:18px; 
+	line-height:20px;
+}
+
+Button
+{
+	FONT-SIZE: 12px;
+	background-color:#3333CC;
+	height:20px; 
+}
+select
+{ 
+	font-size:12px;
+}
+
+A 
+{
+	TEXT-DECORATION: none;
+	color: #000000;
+}
+A:hover
+{
+	COLOR: #195288;
+	text-decoration: underline;
+}
+/*表格*/
+.border
+{
+	border: 1px solid #2F78C8; 
+}
+.title
+{
+	background:url(../images/topBar_bg.gif);
+	font-weight:bold;
+	height:18px;
+}
+.tdbg
+{
+	background:#E5EBF1;
+	height:18px;
+}
+.tdbgc
+{
+	background:#ceebfa;
+}
+.tdbgo
+{
+	background:#BFDFFF;
+}
+
+.tdbg2
+{
+	background:#E0EEF5;
+}
+.tdbg3
+{	 height:20px;
+	background:#D3E7F8;
+	line-height:20px;
+}
+.topbg
+{
+	background:#2F78C8;
+	color: #FFFFFF;
+	font-weight:bold;
+	text-align:center;
+	height:18px;
+}
+.bgcolor {
+	background-color: #E1F4EE;
+}
+
+/*颜色*/
+.blue{color:blue;}
+.red{ color:red;}
+.black{ color:#999999;}
+.green{ color:green;}
+/*按钮*/
+.btn { background:url(../images/btn_bg.gif) repeat-x 0 0; text-align:center; border:1px solid #9cc9e0; padding:3px 4px; *padding:0 4px; color:#077ac7; cursor:pointer; height:21px; line-height:21px; overflow:hidden;}
+/*排序框*/
+.num{BORDER: #aacbe1 1px solid; height:18px; line-height:18px; width:25px; padding:0px 0 0 2px; margin:0px;}
+.numm{BORDER: #aacbe1 1px solid; height:18px; line-height:18px; width:25px; padding:0px 0 0 2px; margin:0px; }
+/*排序提交按钮距离*/
+.p{ padding:8px 0 8px 0; margin:0px;}

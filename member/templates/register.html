@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html class="login-alone">
+    <head>
+        <title>{th:$title}-{th:website field="web_name"}</title>
+		<meta name="description" content="{th:website field="web_description"}">
+        <meta name="keywords" content="{th:website field="web_keyword"}">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <link href="../favicon.ico" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="css/member.css?v=3.9">
+        <script src="{th:$smarty.const.STATIC}/js/jQuery1.7.2.js" type="text/javascript"></script>
+        <link href="../data/Validform/Validform.css" rel="stylesheet" media="screen" type="text/css" />
+
+    </head>
+    <body>
+        <div class="logina-logo" style="height: 55px">
+            <a href="{th:website field="web_host"}">{th:ad id="8" field="ad_content"}</a>
+        </div>
+        <div class="logina-main main clearfix">
+            <div><img src="images/huiyuanzhuce2.png"></div>
+            <div class="tab-con">
+                <form method="post" action="post.php" class="registerform">
+                    <div id='login-error' class="error-tip"></div>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                            <tr>
+                                <th>账 号</th>
+                                <td width="245">
+                                    <input id="email" type="text" name="member_account" placeholder="请输入账号" class="inputxt" autocomplete="off" value=""  datatype="*" nullmsg="请输入您的账号！" errormsg="账号不能为空"></td>
+                                <td>
+                                    <div class="Validform_checktip"></div>
+                                    <div class="info">请输入您的账号！<span class="dec"><s class="dec1">&#9670;</s><s class="dec2">&#9670;</s></span></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>密 码</th>
+                                <td width="245">
+                                    <input id="password" type="password" class="inputxt" name="password" placeholder="请输入密码" autocomplete="off" plugin="passwordStrength"  datatype="*5-18" nullmsg="请输入密码！" errormsg="密码至少5个字符,最多18个字符！" >
+                                </td>
+                                <td>
+                                    <div class="Validform_checktip"></div>
+                                    <div class="passwordStrength" style="display:none;"><b>密码强度：</b> <span>弱</span><span>中</span><span class="last">强</span></div>
+                                    <div class="info">密码至少5个字符,最多18个字符<span class="dec"><s class="dec1">&#9670;</s><s class="dec2">&#9670;</s></span></div>
+                                </td>
+                            </tr>
+                             <tr>
+                                <th>确认密码</th>
+                                <td width="245"><input type="password" value="" name="repassword" recheck="password" placeholder="请再次输入密码"  class="inputxt" datatype="*6-18" nullmsg="请确认密码！" errormsg="两次输入的密码不一致！" /></td>
+                                <td>
+                                    <div class="Validform_checktip"></div>
+                                    <div class="info">请确认您的密码<span class="dec"><s class="dec1">&#9670;</s><s class="dec2">&#9670;</s></span></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>性别</th>
+                                <td>
+                                    <input type="radio" value="b" name="member_sex" checked/> 男
+                                    <input type="radio" value="g" name="member_sex" /> 女
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>手机号码</th>
+                                <td><input type="text" value="" name="member_phone" class="inputxt" datatype="m" placeholder="请输入手机号码"  nullmsg="请输入您的手机号码！" errormsg="手机号码格式错误！"  /></td>
+                                <td>
+                                    <div class="Validform_checktip"></div>
+                                    <div class="info">请输入您的手机号码<span class="dec"><s class="dec1">&#9670;</s><s class="dec2">&#9670;</s></span></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>邮 箱</th>
+                                <td><input type="text" value="" name="member_email" class="inputxt" datatype="e" nullmsg="请输入您的邮箱账号！" errormsg="邮箱账号格式错误！" placeholder="请输入邮箱账号" /></td>
+                                <td>
+                                    <div class="Validform_checktip"></div>
+                                    <div class="info">请输入您的邮箱账号<span class="dec"><s class="dec1">&#9670;</s><s class="dec2">&#9670;</s></span></div>
+                                </td>
+                            </tr>
+                            {th:if $isRegCode}
+                            <tr id="tr-vcode">
+                                <th>验证码</th>
+                                <td width="245">
+                                    <div class="valid">
+                                        <input type="text" name="vcode" class="inputxt" style="width:125px;"><img class="vcode" src="{th:$smarty.const.WEBPATH}/captcha.php"  onClick="this.src='{th:$smarty.const.WEBPATH}/captcha.php?t='+Math.random()" style="cursor:pointer;width:85px;height:35px;">
+                                    </div>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            {th:/if}
+                            <tr>
+                                <th></th>
+                                <td width="245"><input class="confirm" type="submit" value="立即注册"><span id="msgdemo" style="display:block;text-align: center;"></span>
+</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="hidden" name="type" value="register"/>
+                </form>
+            </div>
+            <div class="reg">
+                <p>已有账号？</p>
+                <a class="reg-btn" href="index.php">马上登录！</a>
+            </div>
+        </div>  
+    </body>
+<script type="text/javascript" src="../data/Validform/Validform_v5.3.2.js"></script>
+
+<script type="text/javascript" src="../data/Validform/plugin/passwordStrength/passwordStrength-min.js"></script>
+<link rel="stylesheet" type="text/css" href="../data/easydialog/easydialog.css">
+<script type="text/javascript" src="../data/easydialog/easydialog.min.js"></script>
+<script type="text/javascript" src="../data/js/common.js"></script>
+<script type="text/javascript">
+$(function(){
+    //$(".registerform").Validform();  //就这一行代码！;
+    
+    var getInfoObj=function(){
+            return  $(this).parents("td").next().find(".info");
+        }
+    
+    $("[datatype]").focusin(function(){
+        if(this.timeout){clearTimeout(this.timeout);}
+        var infoObj=getInfoObj.call(this);
+        if(infoObj.siblings(".Validform_right").length!=0){
+            return; 
+        }
+        infoObj.show().siblings().hide();
+        
+    }).focusout(function(){
+        var infoObj=getInfoObj.call(this);
+        this.timeout=setTimeout(function(){
+            infoObj.hide().siblings(".Validform_wrong,.Validform_loading").show();
+        },0);
+        
+    });
+    
+    $(".registerform").Validform({
+        tiptype:2,
+        usePlugin:{
+            passwordstrength:{
+                minLen:6,
+                maxLen:18,
+                trigger:function(obj,error){
+                    if(error){
+                        obj.parent().next().find(".passwordStrength").hide().siblings(".info").show();
+                    }else{
+                        obj.removeClass("Validform_error").parent().next().find(".passwordStrength").show().siblings().hide();  
+                    }
+                }
+            }
+        },
+        tiptype:function(msg,o,cssctl){
+            //msg：提示信息;
+            //o:{obj:*,type:*,curform:*}, obj指向的是当前验证的表单元素（或表单对象），type指示提示的状态，值为1、2、3、4， 1：正在检测/提交数据，2：通过验证，3：验证失败，4：提示ignore状态, curform为当前form对象;
+            //cssctl:内置的提示信息样式控制函数，该函数需传入两个参数：显示提示信息的对象 和 当前提示的状态（既形参o中的type）;
+            if(!o.obj.is("form")){//验证表单元素时o.obj为该表单元素，全部验证通过提交表单时o.obj为该表单对象;
+                var objtip=o.obj.siblings(".Validform_checktip");
+                cssctl(objtip,o.type);
+                objtip.text(msg);
+            }else{
+                var objtip=o.obj.find("#msgdemo");
+                cssctl(objtip,o.type);
+                objtip.text(msg);
+            }
+        },
+        ajaxPost:true,
+        callback:function(data){
+            $("#msgdemo").hide();
+            if(data.status=="y"){
+                showmsg(data.msg);
+                if (data.gourl != '') {
+                    setTimeout(function(){
+                        location.href=data.gourl;
+                    },2000);
+                };
+            }else{
+                $("#login-error").html(data.msg);
+                $("#login-error").show();
+            }
+        }
+    });
+})
+</script>
+</html>
