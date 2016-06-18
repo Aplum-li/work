@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="header-box">
             <div class="header-top">
                 <div class="top-nav">
@@ -48,4 +49,56 @@
                     </ul>
                 </div>
             </div>
+=======
+<div class="header-box">
+            <div class="header-top">
+                <div class="top-nav">
+                    <span class="i">
+                    </span>
+                    <form name="formsearch" action="{th:$smarty.const.WEBPATH}search.php" class='searchform'>
+                      <input name="q" type="text" class="keyword" id="search-keyword">
+                      <input type="submit" value="搜 索" class="sub">
+                    </form>
+                    <a href="{th:website field="web_host"}member/" title="会员中心">
+                        会员中心
+                    </a>
+                    <a href="{th:website field="web_host"}#" onclick="SetHome(this,window.location,&quot;浏览器不支持此功能，请手动设置！&quot;);"
+                    style="cursor:pointer;" title="设为首页">
+                        设为首页
+                    </a>
+                    |
+                    <a href="{th:website field="web_name"}#" onclick="addFavorite(&quot;浏览器不支持此功能，请手动设置！&quot;);"
+                    style="cursor:pointer;" title="收藏本站">
+                        收藏本站
+                    </a>
+                </div>
+            </div>
+            <div class="header-con">
+                <a href="{th:website field="web_host"}" title="{th:website field="web_name"}" id="web_logo">
+                	{th:ad id="8" field="ad_content"}
+                </a>
+                <div class="nav-box">
+                    <ul>
+                    	{th:foreach $navs as $v}
+                        <li class="{th:$v.class}">
+                            <a href="{th:getlisturl id="{th:$v.id}"}" title="{th:$v.typename}">
+                                <font>{th:$v.typename}</font>
+                            </a>
+                            {th:if !empty($v.child)}
+                            <ul>
+                            	{th:foreach $v.child as $item}
+                                <li>
+                                    <a href="{th:getlisturl id="{th:$item.id}"}" title="{th:$item.typename}">
+                                        <font>{th:$item.typename}</font>
+                                    </a>
+                                </li>
+                                {th:/foreach}
+                            </ul>
+                            {th:/if}
+                        </li>
+                        {th:/foreach}
+                    </ul>
+                </div>
+            </div>
+>>>>>>> e316a12f2883fdf9eead1ad03250455c1ccaf174
         </div>

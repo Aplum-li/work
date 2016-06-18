@@ -43,20 +43,24 @@
                             <td style="width:280px;" colspan='2'><?php if(!empty($messageInfo)){echo $messageInfo['username'];}?></td>
                         </tr>
                         <tr>
-                            <td style="width:70px;" class='r'>性 别：</td>
-                            <td style="width:280px;" colspan='2'><?php if(!empty($messageInfo)){if($messageInfo['sex'] == 'b'){ echo '男';}else{echo '女';}}?></td>
+                            <td style="width:70px;" class='r'>公 司：</td>
+                            <td style="width:280px;" colspan='2'><?php if(!empty($messageInfo)){echo $messageInfo['company'];}?></td>
                         </tr>
                         <tr>
                             <td style="width:70px;" class='r'>电 话：</td>
                             <td style="width:280px;" colspan='2'><?php if(!empty($messageInfo)){echo $messageInfo['phone'];}?></td>
                         </tr>
+	                    <tr>
+		                    <td style="width:70px;" class='r'>手 机：</td>
+		                    <td style="width:280px;" colspan='2'><?php if(!empty($messageInfo)){echo $messageInfo['mobile'];}?></td>
+	                    </tr>
                         <tr>
                             <td style="width:70px;" class='r'>邮 箱：</td>
                             <td style="width:280px;" colspan='2'><?php if(!empty($messageInfo)){echo $messageInfo['email'];}?></td>
                         </tr>
                         <tr>
-                            <td style="width:70px;" class='r'>住 址：</td>
-                            <td style="width:280px;" colspan='2'><?php if(!empty($messageInfo)){echo $messageInfo['address'];}?></td>
+                            <td style="width:70px;" class='r'>Q Q：</td>
+                            <td style="width:280px;" colspan='2'><?php if(!empty($messageInfo)){echo $messageInfo['qq'];}?></td>
                         </tr>
                         <tr>
                             <td style="width:70px;" class='r'>留言内容：</td>

@@ -1,4 +1,0 @@
-#RewriteEngine on
-#RewriteBase /
-#RewriteRule ^test/$ /test [R]
-#RewriteRule ^m/([a-zA-Z\d]+)/c/([a-zA-Z\d]+)$ /index.php?m=$1&c=$2

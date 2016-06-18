@@ -1,0 +1,10 @@
+[16-Mar-2016 02:03:38 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file '.html' <-- 
+  thrown in F:\wamp\www\thcms\include\smarty\sysplugins\smarty_internal_templatebase.php on line 129
+[16-Mar-2016 02:04:06 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file '.html' <-- 
+  thrown in F:\wamp\www\thcms\include\smarty\sysplugins\smarty_internal_templatebase.php on line 129
+[16-Mar-2016 02:04:07 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file '.html' <-- 
+  thrown in F:\wamp\www\thcms\include\smarty\sysplugins\smarty_internal_templatebase.php on line 129
+[16-Mar-2016 02:04:37 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file '.html' <-- 
+  thrown in F:\wamp\www\thcms\include\smarty\sysplugins\smarty_internal_templatebase.php on line 129
+[16-Mar-2016 02:04:38 UTC] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template file '.html' <-- 
+  thrown in F:\wamp\www\thcms\include\smarty\sysplugins\smarty_internal_templatebase.php on line 129

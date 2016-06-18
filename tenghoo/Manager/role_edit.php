@@ -103,6 +103,7 @@ h2{background:#e5e5e5;text-indent: 15px;}
                             <td class='r'>权限管理：</td>
                             <td colspan='2'>
                             	<?php foreach ($node_type_list as $k=>$v){?>
+		                            <?php if($v['node_type_id'] == 9){ if($_SESSION['role_id'] != 1){continue;}}?>
 	                            	<h2 style="font-size: 16px;"><?php echo $v['node_type_name'];?> <input class="allChoose" onclick="check_all_other('ids_<?php echo $v['node_type_id'];?>',this)" type="checkbox">&nbsp;&nbsp;</h2>
 	                            	
 	                            	<?php if(!empty($v['node_list'])){ foreach ($v['node_list'] as $n) {?>

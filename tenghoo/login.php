@@ -6,7 +6,7 @@
 ###############################################################################
 require('../include/common.inc.php');
 if ($_POST) {
-	if(@isAjax()){
+	if(isAjax()){
 		$name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
 		$password = isset($_POST['password']) && trim($_POST['password']) != '' ? Md5($_POST['password']) : '';
 		$safecode = isset($_POST['safecode']) && trim($_POST['safecode']) != '' ? strtolower($_POST['safecode']) : '';
@@ -159,35 +159,7 @@ input{
     		</li>
     		<li><input name="submit" type="image" src="images/sub_btn.gif" style="width:98px; height:33px; border:none; margin:0px; padding:0px;"/>
     		</li>
-    	</ul><!-- 
-      <table width="250" border="0" align="center" cellspacing="0" cellpadding='0'>
-        <tr>
-          <td align="right" width="40px">用户名：</td>
-          <td width="164" class='che'>
-          	<input name="name" type="text" class="username" size="25" maxlength="50">
-          	<i class="fa fa-close"></i>
-          </td>
-        </tr>
-        <tr hegiht="30px">
-          <td align="right">密　码：</td>
-          <td class='che'>
-          <input name="password" type="password" class="password" size="25" maxlength="50">
-          <i class="fa fa-close"></i>
-          </td>
-        </tr>
-        <tr hegiht="30px">
-          <td align="right">验证码：</td>
-          <td class='che'><input name="safecode" type="text" class="safecode" size="8" maxlength='4' style="float:left;"><img src="../data/Code.php?t=Math.random()" onClick="this.src='../data/Code.php?t='+Math.random()" style="cursor:pointer;float:left; margin-left:5px;width:65px;">
-          <i class="fa fa-close"></i>
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-          	<input name="submit" type="image" src="images/sub_btn.gif" style="width:98px; height:33px; border:none; margin:0px; padding:0px;"/>
-          </td>
-        </tr>
-      </table> -->
+    	</ul>
     </form>
   </div>
 </div>

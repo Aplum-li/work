@@ -15,9 +15,6 @@
 			div#contact{ margin:20px 0 0 25px;}
 			h1{ font-size:40px; margin-bottom:35px; }
 		</style>
-		
-
-		
 	</head>
 	<body>
 		<div id="mother">
@@ -39,7 +36,6 @@
 				</a>
 				<a href="http://www.tenghoo.com/" title="联系管理员" target="_blank">
 					<div class="link" id="contact"></div>
-
 				</a>
 			</div>
 		</div>

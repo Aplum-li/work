@@ -36,4 +36,3 @@ switch ($type) {
 		
 		break;
 }
-?>

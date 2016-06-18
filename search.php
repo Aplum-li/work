@@ -43,4 +43,3 @@ if (!file_exists($tpl)) {
 	exit();
 }
 $smarty -> display('search.html');
-?>

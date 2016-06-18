@@ -67,6 +67,7 @@ class db {
 	/* ====================== 原始mysql处理函数 ====================== */
 	public function sql_insert($sql)
 	{
+		//echo $sql;die;
 		$this->query($sql);
 		if ($insert_id = mysql_insert_id()) {
 			return $insert_id;

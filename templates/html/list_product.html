@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -165,4 +166,173 @@
 	</div>
 </body>
 <script type="text/javascript" src="js/common.js"></script>
+=======
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>列表页</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.source.js"></script>
+</head>
+<body>
+	<div class="top">
+		<img src="images/logo.png">
+	</div>
+	<div class="banner">
+		<div class="nav">
+			<ul class="navList">
+				<li><a href="">公司首页</a></li>
+				<li><a href="">公司简介</a></li>
+				<li><a href="">产品展示</a></li>
+				<li><a href="">馅料品种</a></li>
+				<li><a href="">人才招聘</a></li>
+				<li><a href="">企业形象</a></li>
+				<li><a href="">公司资讯</a></li>
+				<li><a href="">客户留言</a></li>
+				<li><a href="">联系我们</a></li>
+			</ul>
+		</div>
+		<div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul><li></li><li></li><li></li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li>
+						<a href="" target="_blank">
+							<img src="images/banner.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<img src="images/pic2.jpg" />
+						</a>
+					</li>
+					<li>
+						<a href="" target="_blank">
+							<img src="images/pic3.jpg" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",effect:"fold",autoPlay:true,delayTime:1000});
+		</script>
+	</div>
+	<div class="main">
+		<div class="mainLeft">
+			<div class="leftTitle">视频专区<a href="">more</a></div>
+			<div class="video">
+				<img src="images/video.jpg">
+			</div>
+			<div class="leftTitle">商品目录</div>
+			<div class="sideMenu">
+				<div class="on"><em></em>月饼系列</div>
+				<ul>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+				</ul>
+				<div><em></em>月饼系列</div>
+				<ul>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+				</ul>
+				<div><em></em>月饼系列</div>
+				<ul>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+					<li><a href="">淘宝首页右侧公告</a></li>
+				</ul>
+			</div><!-- sideMenu End -->
+
+			<script type="text/javascript">
+				jQuery(".sideMenu").slide({
+					titCell:"div", //鼠标触发对象
+					targetCell:"ul", //与titCell一一对应，第n个titCell控制第n个targetCell的显示隐藏
+					effect:"slideDown", //targetCell下拉效果
+					delayTime:300 , //效果时间
+					triggerTime:150, //鼠标延迟触发时间（默认150）
+					defaultPlay:true,//默认是否执行效果（默认true）
+					trigger:"click",
+					returnDefault:false //鼠标从.sideMen移走后返回默认状态（默认false）
+					});
+			</script>
+			<div class="leftTitle">商品搜索</div>
+			<div class="searchPro">
+				<form>
+					<select name="typeid">
+						<option value="">请选择分类</option>
+					</select>
+					<input type="text" class="prokey" name="prokey" value="">
+					<input type="submit" value="搜索" class="sub">
+				</form>
+			</div>
+		</div>
+		<div class="mainRight mainRight2">
+			<div class="imgs">
+				<img src="images/listprobg.jpg">
+			</div>
+			<div class="pos">
+				您的位置：<a href="">首页</a> -> 产品展示
+			</div>
+			<ul class="porList">
+				<li>
+					<a href=""><img src="images/pl1.png"></a>
+					<a href="" class="pTitle">鼎盛中华</a>
+				</li>
+				<li><a href=""><img src="images/pl2.jpg"></a>
+					<a href="" class="pTitle">尊贵御月</a></li>
+				<li><a href=""><img src="images/pl3.jpg"></a>
+					<a href="" class="pTitle">至尊鲍鱼</a></li>
+				<li><a href=""><img src="images/pl4.jpg"></a>
+					<a href="" class="pTitle">龙舞金鲍</a></li>
+				<li><a href=""><img src="images/pl5.jpg"></a>
+					<a href="" class="pTitle">富贵金礼</a></li>
+				<li><a href=""><img src="images/pl6.jpg"></a>
+					<a href="" class="pTitle">鸿运福月</a></li>
+				<li><a href=""><img src="images/pl7.jpg"></a>
+					<a href="" class="pTitle">荣华富贵</a></li>
+				<li><a href=""><img src="images/pl8.jpg"></a>
+					<a href="" class="pTitle">荣华富贵</a></li>
+				<li><a href=""><img src="images/pl9.jpg"></a>
+					<a href="" class="pTitle">双黄白莲蓉</a></li>
+			</ul>
+			
+		</div>
+	</div>
+	<div class="footer">
+		<p>广州市穗龙食品有限公司 版权所有@Copyright </p>
+		<p>顾客服务中心：020-88888888/66666666 传真：020-88888888 联系人：XXX</p>
+	</div>
+	<div class="leftWeichat">
+		<div class="weichatImg"><img src="images/weichat.jpg"></div>
+		<div class="wbg" onclick="suspension(this)" name='1'><img src="images/ll.png"></div>
+	</div>
+	<div class="online">
+		<div class="wbg" onclick="suspension(this)" name='1'><img src="images/lr.png"></div>
+		<div class="weichatImg online2">
+			<span class="wTitle">在线咨询</span>
+			<span class="wei">在线咨询</span>
+			<a href="" class="zixun first"><img src="images/qq.png">在线咨询1</a>
+			<a href="" class="zixun"><img src="images/qq.png">在线咨询1</a>
+			<a href="" class="zixun"><img src="images/qq.png">在线咨询1</a>
+			<a href="" class="zixun"><img src="images/qq.png">在线咨询1</a>
+			<a href="" class="zixun"><img src="images/qq.png">在线咨询1</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/common.js"></script>
+>>>>>>> e316a12f2883fdf9eead1ad03250455c1ccaf174
 </html>

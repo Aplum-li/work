@@ -45,12 +45,13 @@ $pos = '留言列表';
                         <tr>
                             <th class="tc" width="4%" style="min-width: 35px;"><input class="allChoose" onclick="check_all_other('ids',this)" type="checkbox"></th>
                             <th width="3%">ID</th>
-                            <th width="15%" style='text-align:left;text-indent:10px;'>名称</th>
-                            <th width="15%" style='text-align:left;text-indent:10px;'>联系方式</th>
-                            <th width="15%" style='text-align:left;text-indent:10px;'>邮箱</th>
-                            <th width="15%" style='text-align:left;text-indent:10px;'>状态</th>
-                            <th width="15%" style='text-align:left;text-indent:10px;'>留言时间</th>
-                            <th width="15%">操作</th>
+                            <th width="12%" style='text-align:left;text-indent:10px;'>名称</th>
+                            <th width="12%" style='text-align:left;text-indent:10px;'>联系电话</th>
+	                        <th width="12%" style='text-align:left;text-indent:10px;'>手机</th>
+                            <th width="12%" style='text-align:left;text-indent:10px;'>邮箱</th>
+                            <th width="12%" style='text-align:left;text-indent:10px;'>状态</th>
+                            <th width="12%" style='text-align:left;text-indent:10px;'>留言时间</th>
+                            <th>操作</th>
                         </tr>
                         <?php foreach($ad_list as $v){ ?>
                         <tr class="del_<?php echo $v['message_id']?>">
@@ -63,6 +64,9 @@ $pos = '留言列表';
                             <td style='text-align:left;text-indent:10px;'>
                                 <?php echo $v['phone']?>
                             </td>
+	                        <td style='text-align:left;text-indent:10px;'>
+		                        <?php echo $v['mobile']?>
+	                        </td>
                             <td style='text-align:left;text-indent:10px;'>
                                 <?php echo $v['email']?>
                             </td>
