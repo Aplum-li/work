@@ -11,7 +11,7 @@ foreach ($typelist  as $key => $value) {
     $pre = str_repeat($str, $value['level']);
     $typelist[$key]['str'] = $pre;
 }
-
+	unset($_SESSION['total']);
 $pos = '生成列表html';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -220,7 +220,7 @@ function strlen_utf8($str) {
  * @param     string  $gourl    跳转地址
  * @return    void
  */
-function showmsg($msg, $gourl = '-1',$refresh=1) {
+function showmsg($msg, $gourl = '-1',$refresh=1,$time=1000) {
     $html = '<!doctype html><html lang="en"><head><meta charset="UTF-8">';
     $html .= '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />';
     $html .= '<title>提示信息</title>';
@@ -228,12 +228,12 @@ function showmsg($msg, $gourl = '-1',$refresh=1) {
     $html .= '<script type="text/javascript" src="/data/layer/layer.js"></script>';
     $html .= '</head><body></body>';
     if($gourl != '-1'){
-        $html .= '<script type="text/javascript">layer.msg("'.$msg.'");setTimeout(function(){window.location.href="'.$gourl.'"},1000)</script></html>';
+        $html .= '<script type="text/javascript">layer.msg("'.$msg.'");setTimeout(function(){window.location.href="'.$gourl.'"},'.$time.')</script></html>';
     } else {
         if($refresh){
-            $html .= '<script type="text/javascript">layer.msg("'.$msg.'");setTimeout(function(){window.location.href=document.referrer},1000)</script></html>';
+            $html .= '<script type="text/javascript">layer.msg("'.$msg.'");setTimeout(function(){window.location.href=document.referrer},'.$time.')</script></html>';
         } else{
-            $html .= '<script type="text/javascript">layer.msg("'.$msg.'");setTimeout(function(){window.history.go(-1)},1000)</script></html>';
+            $html .= '<script type="text/javascript">layer.msg("'.$msg.'");setTimeout(function(){window.history.go(-1)},'.$time.')</script></html>';
         }
     }
     echo $html;

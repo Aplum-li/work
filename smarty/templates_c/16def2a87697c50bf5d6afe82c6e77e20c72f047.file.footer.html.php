@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-04-25 18:02:52
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-06-18 18:38:02
          compiled from "D:\wamp\www\thcms\templates\footer.html" */ ?>
-<?php /*%%SmartyHeaderCode:28139571deb4c148840-07028633%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:91555765248a672c82-07139823%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '16def2a87697c50bf5d6afe82c6e77e20c72f047' => 
     array (
       0 => 'D:\\wamp\\www\\thcms\\templates\\footer.html',
-      1 => 1434636234,
+      1 => 1466241129,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '28139571deb4c148840-07028633',
+  'nocache_hash' => '91555765248a672c82-07139823',
   'function' => 
   array (
   ),
@@ -21,10 +21,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_571deb4c18aec3_99742948',
+  'unifunc' => 'content_5765248a6b9180_16567701',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_571deb4c18aec3_99742948')) {function content_571deb4c18aec3_99742948($_smarty_tpl) {?><?php if (!is_callable('smarty_block_qq')) include 'D:/wamp/www/thcms/smarty/plugins\\block.qq.php';
-?><div class="footer-box">
+<?php if ($_valid && !is_callable('content_5765248a6b9180_16567701')) {function content_5765248a6b9180_16567701($_smarty_tpl) {?><?php if (!is_callable('smarty_block_qq')) include 'D:/wamp/www/thcms/smarty/plugins\\block.qq.php';
+?><<<<<<< HEAD
+<div class="footer-box">
     <div class="foot-nav">
         <a href="http://www.metinfo.cn/demo/M1156/342/about/" title="公司简介">
             公司简介
