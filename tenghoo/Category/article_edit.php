@@ -293,7 +293,7 @@ function upImages() {
 }
 
 $(function(){
-  $('.ch').children('span.c').width($('.ch').width()-115);
+  $('.ch').children('span.c').width($('.ch').width()-125);
 })
 </script>
 
