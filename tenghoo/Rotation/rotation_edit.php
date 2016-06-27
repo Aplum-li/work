@@ -77,12 +77,14 @@
                             <td><div class="Validform_checktip"></div>
                                 <div class="info">请选择分类！<span class="dec"><s class="dec1">&#9670;</s><s class="dec2">&#9670;</s></span></div></td>
                         </tr>
+	                    <tr><td colspan="4" height="10px"></td></tr>
                         <tr>
                             <td class="need"></td>
                             <td class='r'>标题：</td>
                             <td><input type="text" value="<?php if(!empty($rotationinfo)){echo $rotationinfo['title'];}?>" name="info[title]" class="inputxt input400" /></td>
                             <td></td>
                         </tr>
+	                    <tr><td colspan="4" height="10px"></td></tr>
                         <tr>
                             <td class="need"></td>
                             <td  class='r'>图片：</td>
@@ -100,18 +102,21 @@
                                 </div>
                             </td>
                         </tr>
+	                    <tr><td colspan="4" height="10px"></td></tr>
                         <tr>
                             <td class="need" style="width:10px;"></td>
                             <td style="width:70px;" class='r'>链接：</td>
                             <td style="width:280px;"><input type="text" value="<?php if(!empty($rotationinfo)){echo $rotationinfo['link'];}?>" name="info[link]" class="inputxt input400" /></td>
                             <td></td>
                         </tr>
+	                    <tr><td colspan="4" height="10px"></td></tr>
                         <tr>
                             <td class="need" style="width:10px;"></td>
                             <td style="width:70px;" class='r'>排序：</td>
                             <td style="width:280px;"><input type="text" value="<?php if(!empty($rotationinfo)){echo $rotationinfo['sort'];}?>" name="info[sort]" class="inputxt input400"/></td>
                             <td></td>
                         </tr>
+	                    <tr><td colspan="4" height="10px"></td></tr>
                         <tr>
                           <td class="need"></td>
                           <td class='r'>状态：</td>
@@ -126,6 +131,7 @@
                           </td>
                           <td></td>
                       </tr>
+	                    <tr><td colspan="4" height="10px"></td></tr>
                         <tr>
                             <td class="need"></td>
                             <td></td>
