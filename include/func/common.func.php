@@ -884,7 +884,7 @@ function errorLog($error_type, $error_message, $error_file, $error_line){
         echo '出错行数：'.$error_line.'<br>';
     }
 	//记录错误日志
-	error_log($error_message, 3, ROOTPATH."/".date('YmdGis')."_error.log");
+	error_log('错误信息：'.$error_message.'，出错文件：'.$error_file.'，出错行数：'.$error_line.PHP_EOL, 3, ROOTPATH."/log/".date('Ymd')."_error.log");
 }
 
 /**
