@@ -883,6 +883,8 @@ function errorLog($error_type, $error_message, $error_file, $error_line){
         echo '错误文件：'.$error_file.'<br>';
         echo '出错行数：'.$error_line.'<br>';
     }
+	//记录错误日志
+	error_log($error_message, 3, ROOTPATH."/".date('YmdGis')."_error.log");
 }
 
 /**

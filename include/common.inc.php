@@ -7,37 +7,28 @@ define('THINC', str_replace("\\", '/', dirname(__FILE__) ) );
 define('ROOTPATH', str_replace("\\", '/', substr(THINC,0,-8) ) );
 define('DATAPATH',ROOTPATH.'/data/');
 define('WEBPATH', 'http://'.$_SERVER['HTTP_HOST'].'/');
-
 //错误日志
 ini_set("error_log",ROOTPATH."/log/".date('YmdH')."errors.log");
-
 //内存设置
 ini_set("memory_limit", "128M");
-
 //定义自动截取的长度，改变该长度需要修改数据库字段长度
 define('AUTO_DESCRIPTION', 250);
-
 //该系统的语言编码
 define('SOFT_LANG', 'utf-8');
-
 //判断是否存在数据库配置文件
 if(!file_exists(ROOTPATH.'/config/db.config.php')){
 	exit('数据库配置文件不存在');
 }
 //后台名称
 define('ADMIN',WEBPATH.'tenghoo');
-
 require_once ROOTPATH.'/config/db.config.php';
-
 // 函数
 require_once THINC.'/func/common.func.php';
 set_error_handler("errorLog");
 //数据库操作类
 require_once THINC.'/class/db.class.php';
-
 //数据操作类
 require_once THINC.'/class/data.class.php';
-
 header("Content-Type: text/html; charset=".SOFT_LANG);
 //开启session
 session_start();

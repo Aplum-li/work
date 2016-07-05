@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-06-18 18:38:02
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2016-07-05 14:54:24
          compiled from "D:\wamp\www\thcms\templates\footer.html" */ ?>
 <?php /*%%SmartyHeaderCode:91555765248a672c82-07139823%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '16def2a87697c50bf5d6afe82c6e77e20c72f047' => 
     array (
       0 => 'D:\\wamp\\www\\thcms\\templates\\footer.html',
-      1 => 1466241129,
+      1 => 1466505083,
       2 => 'file',
     ),
   ),
@@ -15,17 +15,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5765248a6b9180_16567701',
   'variables' => 
   array (
     'web_qq_status' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5765248a6b9180_16567701',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5765248a6b9180_16567701')) {function content_5765248a6b9180_16567701($_smarty_tpl) {?><?php if (!is_callable('smarty_block_qq')) include 'D:/wamp/www/thcms/smarty/plugins\\block.qq.php';
-?><<<<<<< HEAD
-<div class="footer-box">
+?><div class="footer-box">
     <div class="foot-nav">
         <a href="http://www.metinfo.cn/demo/M1156/342/about/" title="公司简介">
             公司简介
